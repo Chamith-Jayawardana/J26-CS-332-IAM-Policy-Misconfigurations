@@ -1,0 +1,23 @@
+# Dependencies for Project J26-CS-332: Intelligent Cloud Misconfiguration Detection Framework
+# Shared and Member-Specific Machine Learning Packages
+
+python-hcl2>=8.1.4
+pyyaml>=6.0.0
+scikit-learn>=1.3.0
+pandas>=2.0.0
+numpy>=1.24.0
+joblib>=1.3.0
+jupyter>=1.0.0
+notebook>=7.0.0
+
+# Member 2 (Cloud Storage): XGBoost & LightGBM
+xgboost>=2.0.0
+lightgbm>=4.0.0
+
+# Member 3 (IAM Policy): NetworkX & Graph-Informed PyTorch Architecture
+networkx>=3.0.0
+torch>=2.0.0
+
+# Member 1 (IaC Misconfiguration): CodeBERT Deep Learning Architecture
+transformers>=4.35.0
+tokenizers>=0.15.0

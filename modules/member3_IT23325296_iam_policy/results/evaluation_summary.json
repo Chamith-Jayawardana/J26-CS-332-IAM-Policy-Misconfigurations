@@ -1,0 +1,120 @@
+{
+  "author": "C.L.D. Jayawardhana (IT23325296)",
+  "component": "IAM Policy Misconfiguration Detection",
+  "milestone": "50% Mid-Term Progress Review",
+  "models_evaluated": [
+    "GNN (PyTorch)",
+    "XGBoost Gradient Boosting"
+  ],
+  "selected_best_model": "xgboost",
+  "dataset_statistics": {
+    "total_samples": 750,
+    "train_count": 600,
+    "test_count": 150,
+    "class_distribution": {
+      "0": 372,
+      "1": 123,
+      "2": 157,
+      "3": 98
+    }
+  },
+  "feature_count": 11,
+  "comparative_model_results": {
+    "xgboost": {
+      "precision_macro": 0.9203,
+      "recall_macro": 0.955,
+      "f1_macro": 0.9349,
+      "auc_roc": null,
+      "confusion_matrix": [
+        [
+          257,
+          10,
+          0,
+          16
+        ],
+        [
+          3,
+          97,
+          3,
+          0
+        ],
+        [
+          2,
+          0,
+          130,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          80
+        ]
+      ]
+    },
+    "gnn": {
+      "precision_macro": 0.8758,
+      "recall_macro": 0.8287,
+      "f1_macro": 0.8407,
+      "auc_roc": null,
+      "confusion_matrix": [
+        [
+          259,
+          17,
+          0,
+          7
+        ],
+        [
+          3,
+          96,
+          4,
+          0
+        ],
+        [
+          4,
+          2,
+          128,
+          0
+        ],
+        [
+          38,
+          0,
+          1,
+          41
+        ]
+      ]
+    }
+  },
+  "test_metrics": {
+    "precision_macro": 0.9311,
+    "recall_macro": 0.9638,
+    "f1_macro": 0.9454,
+    "auc_roc": null,
+    "confusion_matrix": [
+      [
+        85,
+        1,
+        0,
+        3
+      ],
+      [
+        0,
+        18,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        23,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        18
+      ]
+    ]
+  }
+}
